@@ -16,13 +16,17 @@ const HeaderMainTextStyle = {
     flex: '0 0 65%'
 }
 
-const headerLinkDiv = {
+const HeaderLinkDiv = {
    flex: '1',
    margin: 'auto 0',
    textAlign: 'center'
 }
 
-const headerLink = {
+const HeaderTabStyle = {
+    
+}
+
+const HeaderLink = {
     padding: 5
 }
 export default class Header extends React.Component {
@@ -30,10 +34,11 @@ export default class Header extends React.Component {
         return (
             <header style={HeaderStyle}>
                 <h1 style={HeaderMainTextStyle}>Kora</h1>
-                <div style={headerLinkDiv}>
-                    <Link to="" id="header" style={headerLink}>home</Link>
-                    <Link to="/about"  id="header" style={headerLink}>about</Link>
-                    <Link to="/projects"  id="header" style={headerLink}>projects</Link>
+                <h1 stlye={HeaderTabStyle}>{this.props.tab}</h1>
+                <div style={HeaderLinkDiv}>
+                    <Link to="" id="header" style={HeaderLink}>home</Link>
+                    <Link to="/about"  id="header" style={HeaderLink}>about</Link>
+                    <Link to="/projects"  id="header" style={HeaderLink}>projects</Link>
 
                 </div>
             </header>

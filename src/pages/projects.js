@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 export default () => (
 
   <Layout>
-    <Header tab="home"/>
+    <Header tab="projects"/>
     
   </Layout>
 
