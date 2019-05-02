@@ -1,14 +1,21 @@
-import React from "react"
+import React from 'react';
+import Header from '../components/header'
+import Layout from '../components/layout'
+import ColorScheme from '../components/colorScheme'
+import {Link} from 'gatsby';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const h1Style = {
+    color: ColorScheme.darkPurple
+}
 
-const NotFoundPage = () => (
+export default () => (
+
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Header />
+    <div id="indent">
+        <h1 style={h1Style}>This page doesnt exist!</h1>
+        <p>Go <Link to="" id="body">home</Link>.</p>
+    </div>
   </Layout>
-)
 
-export default NotFoundPage
+)

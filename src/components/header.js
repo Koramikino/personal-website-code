@@ -1,42 +1,42 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import colorScheme from './colorScheme';
+import { Link } from 'gatsby';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const HeaderStyle = {
+    padding: 0,
+    width: '100%',
+    backgroundColor: colorScheme.pastelPurple,
+    color: 'white',
+    display: 'flex',
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+const HeaderMainTextStyle = {
+    padding: '20px',
+    margin: 0,
+    flex: '0 0 65%'
 }
 
-export default Header
+const headerLinkDiv = {
+   flex: '1',
+   margin: 'auto 0',
+   textAlign: 'center'
+}
+
+const headerLink = {
+    padding: 5
+}
+export default class Header extends React.Component {
+    render() {
+        return (
+            <header style={HeaderStyle}>
+                <h1 style={HeaderMainTextStyle}>Kora</h1>
+                <div style={headerLinkDiv}>
+                    <Link to="" id="header" style={headerLink}>home</Link>
+                    <Link to="/about"  id="header" style={headerLink}>about</Link>
+                    <Link to="/projects"  id="header" style={headerLink}>projects</Link>
+
+                </div>
+            </header>
+        )
+    }
+}
