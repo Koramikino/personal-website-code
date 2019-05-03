@@ -11,27 +11,28 @@ const HeaderStyle = {
     justifyContent: 'space-around',
 }
 
-const HeaderLinkDiv = {
-   display: 'flex',
-   justifyContent: 'flex-end',
-   marginTop: 'auto',
-   marginBottom: 'auto'
+const ul = {
+    listStyle: 'none',
+    padding: 0,
+    marginTop: 'auto',
+    marginBottom: 'auto',
 }
 
-const HeaderLink = {
-    padding: '5px'
+const li = {
+    display: 'inline-block',
+    padding: 5
 }
+
 export default class Header extends React.Component {
     render() {
         return (
             <header style={HeaderStyle}>
                 <h1>kora</h1>
-                <div style={HeaderLinkDiv}>
-                    <Link to="" id="header" style={HeaderLink}>home</Link>
-                    <Link to="/about"  id="header" style={HeaderLink}>about</Link>
-                    <Link to="/projects"  id="header" style={HeaderLink}>projects</Link>
-
-                </div>
+                <ul style={ul}>
+                    <li style={li}><Link to="" id="header">home</Link></li>
+                    <li style={li}><Link to="/about" id="header">about</Link></li>
+                    <li style={li}><Link to="/projects" id="header">projects</Link></li>
+                </ul>
             </header>
         )
     }
