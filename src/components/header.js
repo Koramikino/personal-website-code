@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 const HeaderStyle = {
     padding: 0,
     width: '100%',
-    backgroundColor: colorScheme.brightPurple,
+    backgroundColor: colorScheme.purple,
     color: 'white',
     display: 'flex',
     justifyContent: 'space-around',

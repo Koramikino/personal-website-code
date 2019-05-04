@@ -5,8 +5,9 @@ import Layout from '../components/layout'
 export default () => (
 
   <Layout>
-    <Header tab="projects"/>
-    
+    <Header />
+    <div className="intro-div">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
+    <Header />
   </Layout>
 
 )
