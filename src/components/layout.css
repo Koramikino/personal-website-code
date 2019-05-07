@@ -58,7 +58,13 @@ a:active#body {
     text-align: center;
 }
 
-.big-div.intro {
+.left-indent {
+    text-align: left;
+    width: 75%;
+    margin: auto;
+}
+
+.big-div-intro {
     height: calc(100vh - 31px);
     width: 100vw;
     background-color: var(--purple);
@@ -69,14 +75,17 @@ a:active#body {
     max-width: 100%;
 }
 
-.big-div {
-    height: 100vh;
+.big-div-orange {
     width: 100vw;
     background-color: var(--orange);
-    text-align: center;
-    font-size: 48px;
     color: white;
-    line-height: 100vh;
+    max-width: 100%;
+}
+
+.big-div-green {
+    width: 100vw;
+    background-color: var(--green);
+    color: white;
     max-width: 100%;
 }
 
