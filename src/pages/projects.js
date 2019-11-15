@@ -13,15 +13,10 @@ export default () => (
     <h1 className="center"><span className="title-green">website</span></h1>
     <p className="left-indent">this website was built using react and gatsby. it was programmed 
     entirely by me in vscode. it is hosted on github pages and uses a custom domain that was aquired from the github student pack. </p>
-    <h1 className="center"><span className="title-orange">element calculator</span></h1>
-    <p className="left-indent">this was created to help me with chemisty homework during highschool. you enter a molecule into the text field, and it calculates 
-    the total mass the molecule takes up and the percentages that each element takes up in the molecule. this was a problem we had to do frequently in chemistry 
-    so i decided to make a calculator to help save me some time. i found a table with each element and its mass, then put it in a sql databse and used alasql to 
-    fetch the information. this project is on <a href="https://github.com/Koramikino/element-calculator" target="_blank" rel="noopener noreferrer">github </a> and you can also view it on 
+    <h1 className="center"><span className="title-orange">bunni</span></h1>
+    <p className="left-indent">bunni is a monogame framework written in c#. it is an entity-component system that includes functionality like
+    input, animation, colliders, a camera and more. the documentation for this project can be found <a href="https://koramikino.github.io/BunniDocs/" target="_blank" rel="noopener noreferrer">here.</a> this project is on <a href="https://github.com/Koramikino/Bunni" target="_blank" rel="noopener noreferrer">github </a> and you can also view it on 
     its <a href="https://koramikino.github.io/element-calculator/" target="blank" rel="noopener noreferrer">website</a>.</p>
-    <h1 className="center"><span className="title-purple">discord bot #1</span></h1>
-    <p className="left-indent">this bot was the first discord bot i made in 2017. it is not a public repository because it includes tokens and passwords to be able to log into the bot. the 
-    bot isnt anything special, just a basic bot that can play music into a voice channel. even if it is very simple, it was the first thing i made using node.js</p>
     <h1 className="center"><span className="title-green">discord-minecraft integration</span></h1>
     <p className="left-indent">this is a discord bot that i used to link discord and my minecraft server. this bot is much bigger than my first one. it serves two purposes in the server that it runs in. the first one 
     was to give people levels and currency depending on how active they are in the server. this includes sending messages in the text channels and spending time speaking in the voice channels. the more you spend time in 

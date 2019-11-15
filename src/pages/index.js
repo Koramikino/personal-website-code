@@ -15,7 +15,8 @@ export default () => (
     <h1 className="center"><span className="title-orange">skills</span></h1>
     <div className="wrap-center">
       <p className="center">
-      currently i know javascript, css, html, react, java, python, lua, moonscript, node.js, sql, mysql, and i am trying to learn much more.
+      currently i have knowledge in javascript, css, html, react, java, python, c#, c++, lua, moonscript, node.js, sql, mysql, and i am trying to learn much more.
+      i am proficient in javascript, java, c#, and lua.
       </p>
     </div>
     <h1 className="center"><span className="title-purple">about</span></h1>
